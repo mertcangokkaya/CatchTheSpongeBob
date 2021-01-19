@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CatchTheSungerBob</string>
+    <string name="spongebob">Spongebob</string>
+    <string name="patrick">Patrick</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="reset">Reset</string>
+    <string name="score_txt">Score: </string>
+    <string name="time_left">Click Start To Play</string>
+</resources>

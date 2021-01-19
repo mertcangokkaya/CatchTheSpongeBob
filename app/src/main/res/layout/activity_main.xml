@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bikini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="413dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8">
+
+        <ImageView
+            android:id="@+id/spongeBob1"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob1"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob2"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob2"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob3"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob3"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob4"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob4"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob5"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob5"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob6"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob6"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob7"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob7"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob8"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob8"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/spongeBob9"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickBob9"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/sungerbob" />
+
+        <ImageView
+            android:id="@+id/patrick1"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick1"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick2"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick2"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick3"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick3"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick4"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick4"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick5"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick5"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick6"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick6"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick7"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick7"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick8"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/spongebob"
+            android:onClick="clickPatrick8"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/patrick9"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/patrick"
+            android:onClick="clickPatrick9"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/patrick" />
+
+        <ImageView
+            android:id="@+id/hamburger1"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger1"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger2"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger2"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger3"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger3"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger4"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger4"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger5"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger5"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger6"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger6"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger7"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger7"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger8"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger8"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/hamburger" />
+
+        <ImageView
+            android:id="@+id/hamburger9"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:contentDescription="@string/hamburger"
+            android:onClick="clickHamburger9"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/hamburger" />
+
+        <TextView
+            android:id="@+id/anim00_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim01_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim02_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim10_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim11_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim12_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim20_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim21_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim22_1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="#369700"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:animateLayoutChanges="true"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/anim00_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim01_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim02_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim10_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim11_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim12_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim20_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim21_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim22_0Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="-1"
+            android:textColor="#C61E1E"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/anim00_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim01_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim02_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/anim10_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim11_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim12_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1" />
+        <TextView
+            android:id="@+id/anim20_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim21_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+        <TextView
+            android:id="@+id/anim22_2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:text="+2"
+            android:textColor="#6904DD"
+            android:textSize="40sp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="111dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/clickable"
+        android:fontFamily="sans-serif-black"
+        android:onClick="resetGame"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/time_left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/score_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="13dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toEndOf="@+id/txtScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="112dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:background="@drawable/clickable"
+        android:fontFamily="sans-serif-black"
+        android:onClick="startGame"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/txtTopScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Top Score: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <TextView
+        android:id="@+id/topScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTopScore"
+        app:layout_constraintTop_toTopOf="@+id/txtTopScore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
