@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 anim10_2Point,anim11_2Point,anim12_2Point,
                 anim20_2Point,anim21_2Point,anim22_2Point};
         resultScore=0;
-        time=61;;
+        time=5;;
         speed = 900;
         possibility=0;
         pointNumber=0;
@@ -244,7 +244,8 @@ public class MainActivity extends AppCompatActivity {
                                     score.setText(""+resultScore);
                                     if(resultScore > storedTopScore) {
                                         sharedPreferences.edit().putInt("storedTopScore", resultScore).apply();
-                                        topScore.setText("" + resultScore);
+                                        storedTopScore = sharedPreferences.getInt("storedTopScore",0);
+                                        topScore.setText("" + storedTopScore);
                                     }
                                     TimeIsUp();
                                     handlerTime.removeCallbacks(runnableTime);
@@ -427,12 +428,13 @@ public class MainActivity extends AppCompatActivity {
         handlerSpeed.post(runnableSpeed);
     }
 
-    public void afterClickImage(){
+    public void afterClickImage(View view){
+        view.setVisibility(View.INVISIBLE);
         MediaPlayer mp2 = MediaPlayer.create(this, R.raw.click_image);
         resultScore = Integer.parseInt(score.getText().toString());
         resultScore++;
         if(!seriesStart) {
-            speed = speed - 7;
+            speed = speed - 8;
             series++;
         }
         score.setText(""+resultScore);
@@ -444,7 +446,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void afterClickImageNegative(){
+    public void afterClickImageNegative(View view){
+        view.setVisibility(View.INVISIBLE);
         MediaPlayer mp2 = MediaPlayer.create(this, R.raw.click_image);
         resultScore = Integer.parseInt(score.getText().toString());
         resultScore--;
@@ -454,7 +457,8 @@ public class MainActivity extends AppCompatActivity {
         mp2.start();
     }
 
-    public void afterClickImageBonus(){
+    public void afterClickImageBonus(View view){
+        view.setVisibility(View.INVISIBLE);
         MediaPlayer mp2 = MediaPlayer.create(this, R.raw.click_image);
         resultScore = Integer.parseInt(score.getText().toString());
         resultScore = resultScore + 2;
@@ -464,112 +468,85 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickBob1(View view){
-        images[0].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob2(View view){
-        images[1].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob3(View view){
-        images[2].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob4(View view){
-        images[3].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob5(View view){
-        images[4].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob6(View view){
-        images[5].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob7(View view){
-        images[6].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob8(View view){
-        images[7].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickBob9(View view){
-        images[8].setVisibility(View.INVISIBLE);
-        afterClickImage();
+        afterClickImage(view);
     }
     public void clickPatrick1(View view){
-        images[9].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick2(View view){
-        images[10].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick3(View view){
-        images[11].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick4(View view){
-        images[12].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick5(View view){
-        images[13].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick6(View view){
-        images[14].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick7(View view){
-        images[15].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick8(View view){
-        images[16].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickPatrick9(View view){
-        images[17].setVisibility(View.INVISIBLE);
-        afterClickImageNegative();
+        afterClickImageNegative(view);
     }
     public void clickHamburger1(View view){
-        bonusImages[0].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger2(View view){
-        bonusImages[1].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger3(View view){
-        bonusImages[2].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger4(View view){
-        bonusImages[3].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger5(View view){
-        bonusImages[4].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger6(View view){
-        bonusImages[5].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger7(View view){
-        bonusImages[6].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger8(View view){
-        bonusImages[7].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
     public void clickHamburger9(View view){
-        bonusImages[8].setVisibility(View.INVISIBLE);
-        afterClickImageBonus();
+        afterClickImageBonus(view);
     }
 
 }
