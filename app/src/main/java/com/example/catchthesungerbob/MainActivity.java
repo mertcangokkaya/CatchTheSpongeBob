@@ -3,8 +3,6 @@ package com.example.catchthesungerbob;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.ActivityManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,9 +17,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.List;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -70,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
     Animation animationTopScoreText;
     Animation animationTopScore;
     MediaPlayer mediaPlayer;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                 anim10_2Point,anim11_2Point,anim12_2Point,
                 anim20_2Point,anim21_2Point,anim22_2Point};
         resultScore=0;
-        time=5;;
+        time=5;
         speed = 900;
         possibility=0;
         pointNumber=0;

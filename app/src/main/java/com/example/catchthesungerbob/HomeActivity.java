@@ -33,8 +33,6 @@ public class HomeActivity extends AppCompatActivity {
         menuHowtoplay.startAnimation(animation);
         intent = new Intent(HomeActivity.this, HomeBackgroundSoundService.class);
         startService(intent);
-        //mediaPlayer = MediaPlayer.create(this,R.raw.spongebob_home_music);
-        //mediaPlayer.start();
     }
 
     @Override

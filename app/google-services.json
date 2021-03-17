@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "617152656878",
+    "firebase_url": "https://catch-the-spongebob-default-rtdb.firebaseio.com",
+    "project_id": "catch-the-spongebob",
+    "storage_bucket": "catch-the-spongebob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617152656878:android:da923ed66090a0d4cd4aff",
+        "android_client_info": {
+          "package_name": "com.example.catchthesungerbob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617152656878-c2p29gqh0u2blsp5t19rgfv022qm6nkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8QHJLsjt5hwKvncM86PyGWLPtRDbrdQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617152656878-c2p29gqh0u2blsp5t19rgfv022qm6nkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
