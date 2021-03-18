@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         handlerSpeed = new Handler();
         imageNumber = ran.nextInt(images.length);
 
-        sharedPreferences=this.getSharedPreferences("com.example.catchthesungerbob", Context.MODE_PRIVATE);
+        sharedPreferences=this.getSharedPreferences("com.gokkayam.catchthespongebob", Context.MODE_PRIVATE);
         storedTopScore = sharedPreferences.getInt("storedTopScore",0);
         topScore.setText(""+ storedTopScore);
 
