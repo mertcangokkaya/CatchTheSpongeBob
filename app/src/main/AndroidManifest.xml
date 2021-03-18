@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.catchthesungerbob">
+    package="com.gokkayam.catchthespongebob">
 
     <application
         android:allowBackup="true"
@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".HowActivity"></activity>
-        <activity android:name=".HomeActivity">
+        <activity android:name="com.gokkayam.catchthespongebob.HowActivity"></activity>
+        <activity android:name="com.gokkayam.catchthespongebob.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.gokkayam.catchthespongebob.MainActivity"></activity>
 
-        <service android:name=".BackgroundSoundService" />
-        <service android:name=".HomeBackgroundSoundService" />
+        <service android:name="com.gokkayam.catchthespongebob.BackgroundSoundService" />
+        <service android:name="com.gokkayam.catchthespongebob.HomeBackgroundSoundService" />
 
         <meta-data android:name="com.google.android.gms.games.APP_ID"
             android:value="@string/app_id" />
